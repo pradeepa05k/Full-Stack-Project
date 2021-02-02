@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Public/Styles/StudentLogin.css">
+    <title>Student Login</title>    
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://i.pinimg.com/originals/65/dc/a6/65dca69f78972935caf61580e7c17bd9.png" alt="Login Image" width="300" height="350">
+        </div>
+        <div class="right">
+            <h1>Student Login</h1>    
+            <form action="/validate" method="POST">
+                <input type="text" placeholder="Email" id="Lmail" name="Email" onChange="valid()"><br>
+                <span id="Eemail" style="color: red;"></span><br>
+
+                <input type="password" placeholder="Password" id="Lpassword" name="password" onChange="valid()"><br>
+                <span id="Epwd" style="color: red;"></span><br><br>
+
+                <button type="submit" onClick="valid()">Submit</button><br><br>
+            </form>
+            <p>New User? <a href="/signup">Register</a></p>
+        </div>
+    </div>
+    <script src="Public/Script/LoginScript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="Public/Styles/StudentRegister.css">
+</head>
+<body>    
+    <div class="container">
+        <div class="left">
+            <h1>Register</h1>
+            <form action="/signupValidate" method="POST" onsubmit="return validate()">
+                <div class="ip">
+                    <input type="text" placeholder="Name" id="rname" name="NAME" onChange="validateName()"><br><br>
+                    <span id="Ename" style="color: red;"></span><br><br>
+
+                    <input type="text" placeholder="Roll Number" id="roll" name="ROLLNO" onChange="validateRoll()" ><br><br>                    
+                    <span id="Eroll" style="color: red;"></span><br><br>
+
+                    <input type="email" placeholder="Email"  id="mail" name="EMAIL" onChange="validateEmail()"><br><br>
+                    <span id="EmailErr" style="color: red;"></span><br><br>
+
+                    <input type="password" placeholder="Password"  id="pwd" name="PASSWORD" onChange="validatePassword()"><br><br>
+                    <span id="Epass" style="color: red;"></span><br><br>
+
+                    <input type="password" placeholder="Confirm Password"  id="conf" onChange="validateConfirmPassword()"><br><br>
+                    <span id="Cpass" style="color: red;"></span><br>
+                </div>
+                <div class="gen">
+                    <!-- <label for="gender" name="gender" >Gender :</label><br><br> -->
+                    <p>Gender :</p>
+                    <input type="radio" name="GENDER" id="gender" value="Male" onChange="validateGend()">Male
+                    <input type="radio" name="GENDER" id="gender"  value="Female" onChange="validateGend()">Female
+                    <input type="radio" name="GENDER" id="gender"  value="Others" onChange="validateGend()">Others<br><br>
+                    <span id="Egend" style="color: red;"></span>
+                </div>
+                <button type="submit" >Register</button>
+            </form>
+            <p>Already Registered? <a href="/login">Login</a></p>
+        </div>
+        <div class="right">
+            <img src="https://i.pinimg.com/originals/82/bb/6c/82bb6c639e2356a29bb6d878c8f354d1.jpg" alt="Image" width="400" height="450">
+        </div>
+    </div>    
+    <script src="Public/Script/RegisterScript.js"></script>
+
+</body>
+</html>

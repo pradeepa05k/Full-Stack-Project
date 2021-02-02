@@ -1,0 +1,61 @@
+.container{
+    padding-left: 40px;
+    padding-right: 60px;
+    padding-top: 40px;
+    margin-top: 100px;
+    width: 750px;
+    height: 400px;
+    background: linear-gradient(to bottom right, #0066eb 55%, #ff8ab3 25%);
+    box-shadow:         inset 0 0 10px #000000;
+}
+body{
+    background-image: url("https://s3.amazonaws.com/nickelodeonparents.com-production/wp-content/uploads/2020/04/Baby_Shark_BackgroundV3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 400px;
+    padding-right: 400px;
+    display: flex;
+}
+.left{
+    float: left;
+}
+.right{
+    padding: 40px;
+    padding-left: 43px;
+    padding-right: 40px;
+    width: 220px;
+    height: 270px;
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color: white;
+    margin-top: 0;
+}
+input{
+    padding: 8px;
+    width: 220px;
+}
+button{
+    padding: 8px;
+    align-content: center;
+    width: 235px;            
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: rgb(67, 241, 154);
+}
+h1{
+    margin-left: 15px;
+}
+p{
+    margin-left: 35px;
+}
+a:hover{
+    color: red;
+}
+button:hover {
+    background-color: green;
+    color: white;
+}
